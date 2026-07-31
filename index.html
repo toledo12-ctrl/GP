@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GP — Artigos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="navbar-inner">
+      <a href="#" class="logo">
+        <img src="logo_gp_teal_processed.png" alt="Logo GP" class="logo-img" />
+      </a>
+
+      <nav class="links">
+        <a href="#" class="link link-active">Início</a>
+        <a href="#historias" class="link">Artigos</a>
+        <a href="#" class="link link-muted">Sobre</a>
+      </nav>
+
+      <div class="toggle-area">
+        <label class="toggle">
+          <input type="checkbox" id="themeToggle" />
+          <span class="toggle-track">
+            <svg class="toggle-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z" />
+            </svg>
+            <span class="toggle-knob"></span>
+          </span>
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-image" aria-label="Espaço para imagem">
+        <img src="https://www.civitatis.com/f/brasil/rio-de-janeiro/rio-de-janeiro.jpg" alt="Imagem do RJ">
+      </div>
+    </section>
+
+    <section class="lorem-section">
+      <div class="lorem-inner">
+        <h2>Galva Produções</h2>
+        <p>A Galva Produções é uma empresa oficial dos Monges Calvos responsável pela preservação histórica da história calviana e outras produções privadas. Oferecemos diversos artigos escritos pelo nosso(
+        único ) melhor escritor: Toledo da Toquinha!. Trabalhamos para postar novos trabalhos constantemente, então sempre olhe este site para checar as novidades.</p>
+      </div>
+    </section>
+
+    <section class="historias" id="historias">
+      <div class="conteudo">
+        <div class="cabecalho">
+          <div class="titulo">
+            <h1>Conheça nossos artigos</h1>
+            <p>Artigos e conteúdos selecionados para você.</p>
+          </div>
+          <div class="busca">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+            <span>Buscar artigos...</span>
+          </div>
+        </div>
+
+        <div class="filtros">
+          <button class="chip chip-active">Todas</button>
+          <button class="chip">Completa</button>
+          <button class="chip">Em andamento</button>
+          <button class="chip">Rascunho</button>
+        </div>
+
+        <div class="grade">
+          <div class="linha">
+            <article class="card">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </article>
+            <article class="card">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </article>
+            <article class="card">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            </article>
+          </div>
+          <div class="linha">
+            <article class="card">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </article>
+            <article class="card">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+            </article>
+            <article class="card">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const toggle = document.getElementById('themeToggle');
+    toggle.addEventListener('change', () => {
+      document.documentElement.dataset.theme = toggle.checked ? 'dark' : 'light';
+    });
+  </script>
+</body>
+</html>
