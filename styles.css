@@ -297,6 +297,18 @@ body {
   border-radius: 12px;
   background: var(--surface);
   border: 1px solid var(--divider);
+  cursor: pointer;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
 }
 
 .card h3 {
@@ -308,6 +320,82 @@ body {
 .card p {
   font-size: 14px;
   line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* ---------- Pop-up ---------- */
+
+body.modal-open {
+  overflow: hidden;
+}
+
+#artigoModal {
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--divider);
+  border-radius: 16px;
+  background: var(--bg);
+  max-width: 720px;
+  width: min(720px, calc(100% - 32px));
+  max-height: 85vh;
+  overflow-y: auto;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.2);
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+#artigoModal::backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.artigo-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px 28px;
+  border-bottom: 1px solid var(--divider);
+}
+
+.artigo-modal-title-group h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--text-primary);
+}
+
+.artigo-modal-close {
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: transparent;
+  border: 0;
+  color: var(--text-muted);
+  cursor: pointer;
+  flex: 0 0 auto;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.artigo-modal-close:hover {
+  color: var(--text-primary);
+  background: var(--surface);
+}
+
+.artigo-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 28px;
+}
+
+.artigo-modal-body p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.7;
   color: var(--text-muted);
 }
 
@@ -337,5 +425,17 @@ body {
   .card {
     height: auto;
     min-width: 100%;
+  }
+
+  .artigo-modal-header {
+    padding: 20px 20px;
+  }
+
+  .artigo-modal-title-group h3 {
+    font-size: 19px;
+  }
+
+  .artigo-modal-body {
+    padding: 20px;
   }
 }
