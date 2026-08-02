@@ -19,11 +19,14 @@ const ARTIGOS = [
     ]
   },
   {
-    titulo: "Lorem ipsum dolor sit amet",
-    excerto: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    titulo: "Chegada nos balticos",
+    excerto: "Em 1340, uma flotilha inglesa  dos Monges Calvos partiu do porto de Newcastle upon Tyne, no norte da Inglaterra, em direção a... ",
     conteudo: [
-      "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
-      "Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores."
+      "Os monges conversaram com vários comerciantes germânicos que viajavam por essas regiões.",
+      "Descobriram então informações úteis sobre o governo nos bálticos e sobre as regiões a leste da Noruega, território que era Monge calvado desde o fim da Guerra Norueguesa.",
+      "Aparentemente, o rei sueco-norueguês(ele governava os dois países) conquistou territórios na costa da Finlândia, um território ao norte até então desconhecido pelos monges e sobre uma cidade chamada Tukur nessa tal Finlândia. Ouviram que essa terra era separada dos bálticos(países) por um curto corpo d´agua além da Estônia, outro território um pouco menos a norte até então desconhecido.",
+      "Descobriram também que a região era controlada pela Ordem da Livônia, um ramo da Ordem Teutônica. Essa informação viria a ser de extrema importância para os monges quando fossem manter sua influência nessa região.",
+      "Por fim, ouviram falar de uma tal de República de Novgorod, a nordeste, dita como um grande estado eslavo influente na região e que conflituava com o Principado da Moscóvia. A partir daí, a expedição dos calvos já tinha seus novos destinos traçados."
     ]
   },
   {
