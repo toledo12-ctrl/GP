@@ -22,6 +22,7 @@ const ARTIGOS = [
     titulo: "Chegada nos balticos",
     excerto: "Em 1340, uma flotilha inglesa  dos Monges Calvos partiu do porto de Newcastle upon Tyne, no norte da Inglaterra, em direção a... ",
     conteudo: [
+      "Em 1340, uma flotilha inglesa  dos Monges Calvos partiu do porto de Newcastle upon Tyne, no norte da Inglaterra, em direção a Riga na Livônia Medieval(atual Letônia). ",
       "Os monges conversaram com vários comerciantes germânicos que viajavam por essas regiões.",
       "Descobriram então informações úteis sobre o governo nos bálticos e sobre as regiões a leste da Noruega, território que era Monge calvado desde o fim da Guerra Norueguesa.",
       "Aparentemente, o rei sueco-norueguês(ele governava os dois países) conquistou territórios na costa da Finlândia, um território ao norte até então desconhecido pelos monges e sobre uma cidade chamada Tukur nessa tal Finlândia. Ouviram que essa terra era separada dos bálticos(países) por um curto corpo d´agua além da Estônia, outro território um pouco menos a norte até então desconhecido.",
