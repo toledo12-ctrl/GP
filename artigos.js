@@ -31,11 +31,17 @@ const ARTIGOS = [
     ]
   },
   {
-    titulo: "Lorem ipsum dolor sit amet",
-    excerto: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  titulo: "Rumo a Novgorod",
+    excerto: "Após o desembarque em Riga, os monges seguiram até a cidade de Wolmar, onde contrataram um guia que...",
     conteudo: [
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-      "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+      "AVISO: O artigo a seguir é uma continuação do artigo \"Chegada aos Bálticos\", certifique-se de ler antes de continuar lendo este",
+      "Sabe-se que após o desembarque em Riga, os monges da expedição seguiram até a cidade de Wolmar. Pouco se sabe sobre a estadia na pequena cidade, mas foi lá em que contrataram um guia que os levaria até a cidade de Novgorod.",
+      "A jornada deve ter durado em torno de 12 a 17 dias, chegando até a cidade em meados de Agosto provavelmente. Havia um diário de um dos monges que participou da missão e que estava guardado no acervo de Londres, infelizmente, quase todo o material foi carbonizado e destruído no Grande Incêndio de Londres.",
+      "Felizmente, temos uma boa quantidade de registros sobre Novgorod que chegaram até a Inglaterra em bom estado e que existem até hoje. A maioria é sobre o comércio entre a região e os principais membros da Liga Hanseática, mas ainda há alguns mais interessantes.",
+      "Um deles fala sobre o relato de um comerciante alemão que vivia e viajava pela região já havia alguns anos, relatando que uma noite observou um pequeno vilarejo em chamas e pessoas meio baixas vagando pelo lugar.",
+      "Outros relatos similares foram coletados até que pudessem falar com o Posadnik(chefe executivo da República eleito pela assembleia).",
+      "Há apenas um registro existente da conversa, mas que analisado junto de outros documentos posteriores foi concluído que o chefe os contou que os pequenos vilarejos do país estavam sendo atacados por um grupo de pessoas morenas e baixas, confirmando a presença dos Dollunos naquelas terras.",
+      "O.B.S: Esse texto está sujeito a possíveis alterações futuras"
     ]
   },
   {
