@@ -51,11 +51,14 @@ const ARTIGOS = [
     ]
   },
   {
-    titulo: "Lorem ipsum dolor sit amet",
-    excerto: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+   titulo: "Fundação da Ordem dos Monges Calvos",
+    excerto: "Em 779 d.C, durante o começo da perseguição \"moderna\" aos dollunos, digo \"moderna\" já que..",
     conteudo: [
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
-      "Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi."
+      "Em 779 d.C, durante o começo da perseguição \"moderna\" aos dollunos, digo \"moderna\" já que ela dura até hoje, os inimigos fugiram e se espalharam pelas terras que possuem costa no Mar do Norte.",
+      "Com eles espalhados, seria impossível perseguir elas da mesma forma que estavam fazendo, seria preciso alguma forma de organizar e coordenar missões a longas distâncias e em terras fora da Grã--bretanha.",
+      "Dessa forma, o monge yorkino {NOME DO MONGE} junto de outros calvos fundaram a **Ordem dos Monges Calvos Ingleses**, uma companhia organizada que funcionava de forma hierárquica.",
+      "Acredita-se que ela se espalhou por todo território da Inglaterra em 796, quando adquiriram um prédio na cidade Padstow, em Cornwall(*Em português: Cornualha*), a principal cidade da porção meridional da atual Inglaterra.",
+      "Pouco se sabe sobre os anos entre a fundação e a compra do prédio em Cornwall, na verdade, os primeiros registros escritos sobre a Ordem só começaram a ser escritos em 812 devido a necessidade de fazer documentos para expedições marítimas."
     ]
   },
   {
