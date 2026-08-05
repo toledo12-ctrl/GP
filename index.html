@@ -124,6 +124,21 @@
     const grade = document.getElementById('grade');
     const artigoModal = document.getElementById('artigoModal');
 
+    let audioAtual = null;
+
+    const ICONE_SOM =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+        '<path d="M11 5 6 9H2v6h4l5 4V5Z" />' +
+        '<path d="M15.54 8.46a5 5 0 0 1 0 7.07" />' +
+        '<path d="M19.07 4.93a10 10 0 0 1 0 14.14" />' +
+      '</svg>';
+
+    const ICONE_PAUSA =
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor">' +
+        '<rect x="6" y="4" width="4" height="16" rx="1" />' +
+        '<rect x="14" y="4" width="4" height="16" rx="1" />' +
+      '</svg>';
+
     function renderArtigos() {
       grade.innerHTML = '';
       for (let i = 0; i < ARTIGOS.length; i += 3) {
@@ -181,6 +196,49 @@
 
       artigoModal.querySelector('.artigo-modal-title-group h3').textContent = artigo.titulo;
       const body = artigoModal.querySelector('.artigo-modal-body');
+
+      if (artigo.audio) {
+        const area = document.createElement('div');
+        area.className = 'artigo-audio-area';
+
+        const botao = document.createElement('button');
+        botao.className = 'artigo-audio-btn';
+        botao.type = 'button';
+        botao.setAttribute('aria-label', 'Ouvir áudio do artigo');
+        botao.innerHTML = ICONE_SOM;
+
+        const rotulo = document.createElement('span');
+        rotulo.className = 'artigo-audio-label';
+        rotulo.textContent = 'Ouvir áudio';
+
+        area.appendChild(botao);
+        area.appendChild(rotulo);
+        body.appendChild(area);
+
+        const audio = new Audio(artigo.audio);
+        audioAtual = audio;
+
+        const finalizar = () => {
+          botao.classList.remove('artigo-audio-btn--playing');
+          botao.innerHTML = ICONE_SOM;
+          rotulo.textContent = 'Ouvir áudio';
+        };
+
+        audio.addEventListener('ended', finalizar);
+
+        botao.addEventListener('click', () => {
+          if (audio.paused) {
+            audio.play();
+            botao.classList.add('artigo-audio-btn--playing');
+            botao.innerHTML = ICONE_PAUSA;
+            rotulo.textContent = 'Pausar áudio';
+          } else {
+            audio.pause();
+            finalizar();
+          }
+        });
+      }
+
       artigo.conteudo.forEach((paragrafo) => {
         const p = document.createElement('p');
         p.innerHTML = paragrafoHtml(paragrafo);
@@ -198,6 +256,8 @@
 
     artigoModal.addEventListener('close', () => {
       document.body.classList.remove('modal-open');
+      if (audioAtual) audioAtual.pause();
+      audioAtual = null;
     });
 
     artigoModal.addEventListener('click', (event) => {
