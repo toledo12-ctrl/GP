@@ -2,17 +2,21 @@
 //   titulo   -> título exibido no card e no pop-up
 //   excerto  -> texto curto exibido no card
 //   conteudo -> array de parágrafos exibidos no pop-up
+//   audio    -> (opcional) caminho do arquivo de áudio do artigo.
+//               Se estiver preenchido, aparece uma bolinha de som no
+//               pop-up que toca/pausa o áudio.
 // O card e o pop-up são gerados automaticamente.
 const ARTIGOS = [
   {
     titulo: "O que são os Monges Calvos? ",
     excerto: "Bem, os Monges Calvos são uma ordem secreta da espécie Homo Calvus...",
+    audio: "Audios/artigo1Audio.ogg",
     conteudo: [
       "Bem, os Monges Calvos são uma ordem secreta da espécie *Homo Calvus*, praticamente humanos mas de cabelo verde, podendo variar de um verde mais escuro até um verde tão vivo que doi os zoí.",
       "Tecnicamente, A Ordem dos Monges Calvos(Ou só Monges Calvos) surgiu de fato em 779d.C na Inglaterra. Entretanto, contudo e todavia, esses manos já lutaram algumas vezes contra os Dollunos durante a época romana, quando eles chegaram na Terra pela primeira vez, caindo no sul da Galia(França)",
-      "Nesses tempos, os Dollunos foram derrotadas e foram e-x-t-i-n-t-o-s(💀) do planeta.",
+      "Nesses tempos, os Dollunos foram derrotadas e e-x-t-i-n-t-o-s(💀) do planeta.",
       "Infelizmente, os safados acabaram voltando em 778, dessa vez caindo em algum lugar a lesta da cidade de Durham, no Reino da Northumbria.",
-      "Nessa época, a Grã-Bretanha estava sendo assolada por incursões vikings vindos da Escandinávia e da Dinamarca, o que é até irônico já que os reinos ingleses também eram vikings. Os invasores nórdicos viram os seres humanoides baixinhos como bixinhos legais e que poderiam ajuda-los em seus saques.",
+      "Nessa época, a Grã-Bretanha estava sendo assolada por incursões vikings vindos da Escandinávia e da Dinamarca, o que é até irônico já que os reinos ingleses também eram vikings. Os invasores nórdicos viram nos seres humanoides baixinhos como bixinhos legais e que poderiam ajuda-los em seus saques.",
       "Com o tempo, um grupo de *Homo Calvus* que viviam em York reconheceram que aquelas \"pessoas\" eram os dollunos descritos nas história da cultura calval. Os monges mais velhos armaram-se e juntaram os resto do povo calvo para combater os invasores espaciais e vikings(também invasores, só que não espacias).",
       "Com o apoio de combatentes locais, conseguiram aniquilar(💀) vários dollunos, mas diferente de alguns séculos atrás, os dollunos fugiram com os vikings para a Noruega. Mesmo assim, os calvos estavam determinados a perseguirem os baixinhos espaciais.",
       "Assim surgiu a Ordem dos Monges Calvos, que rapidamente cresceu com apoio de outros monges espalhados pelos reinos anglo-saxões."
@@ -21,6 +25,7 @@ const ARTIGOS = [
   {
     titulo: "Chegada nos balticos",
     excerto: "Em 1340, uma flotilha inglesa  dos Monges Calvos partiu do porto de Newcastle upon Tyne, no norte da Inglaterra, em direção a... ",
+    audio: "Audios/artigo2Audio.ogg",
     conteudo: [
       "Em 1340, uma flotilha inglesa  dos Monges Calvos partiu do porto de Newcastle upon Tyne, no norte da Inglaterra, em direção a Riga na Livônia Medieval(atual Letônia). ",
       "Os monges conversaram com vários comerciantes germânicos que viajavam por essas regiões.",
@@ -31,8 +36,9 @@ const ARTIGOS = [
     ]
   },
   {
-  titulo: "Rumo a Novgorod",
+    titulo: "Rumo a Novgorod",
     excerto: "Após o desembarque em Riga, os monges seguiram até a cidade de Wolmar, onde contrataram um guia que...",
+    audio: "Audios/artigo3Audio.ogg",
     conteudo: [
       "AVISO: O artigo a seguir é uma continuação do artigo \"Chegada aos Bálticos\", certifique-se de ler antes de continuar lendo este",
       "Sabe-se que após o desembarque em Riga, os monges da expedição seguiram até a cidade de Wolmar. Pouco se sabe sobre a estadia na pequena cidade, mas foi lá em que contrataram um guia que os levaria até a cidade de Novgorod.",
