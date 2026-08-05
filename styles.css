@@ -411,6 +411,56 @@ body.modal-open {
   color: var(--text-muted);
 }
 
+/* ---------- Áudio do artigo (pop-up) ---------- */
+
+.artigo-audio-area {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  padding: 4px 12px 4px 4px;
+  border-radius: 999px;
+  background: transparent;
+  border: 0;
+}
+
+.artigo-audio-btn {
+  width: 28px;
+  height: 28px;
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.15);
+  color: #2563EB;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.artigo-audio-btn svg {
+  width: 12px;
+  height: 12px;
+}
+
+.artigo-audio-btn:hover {
+  background: rgba(59, 130, 246, 0.25);
+  transform: scale(1.05);
+}
+
+.artigo-audio-btn--playing {
+  background: #2563EB;
+  border-color: #2563EB;
+  color: #FFFFFF;
+}
+
+.artigo-audio-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
 /* ---------- Chat decorativo ---------- */
 
 .chat-toggle {
